@@ -110,9 +110,9 @@ export default {
       commands: {
         help: "Available commands: help, about, skills, projects, resume, contact, clear.",
         about: "Hi! I'm Adi. I am a learning Data Scientist.. <br>Wanna know more? <br>Type 'about --more'",
-        skills: "Python, Vue.js, Flask, Data Science, GoLang, PostgreSQL.",
+        skills: this.redirectSkills,
         projects: "Check out my projects: Project A, Project B (add links later).",
-        resume: "Opening resume... (add resume link)",
+        resume: this.openResume,
         "about --more" : this.redirectToAbout,
         contact: this.redirectToContact, // Attach the method for contact command
         clear: () => this.clearOutput(),
@@ -152,6 +152,14 @@ export default {
                 this.$router.push('/about-me');
             }, 1000);
         },
+        openResume() {
+            this.output.push("> resume", "Opening resume...");
+            setTimeout(() => {
+                // Open the resume URL in a new tab
+                window.open('https://drive.google.com/file/d/1vv3t_TfbJX0jEjYfp7DJe5iYo61xJWD9/view?usp=sharing', '_blank'); // Replace with your actual resume URL
+            }, 1000);
+        },
+
         // Function to replace <br> with actual line breaks
         formatOutput(text) {
             return text.split('<br>');
