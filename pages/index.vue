@@ -19,11 +19,8 @@
 			</div>
 
 			<div id="info">
-				<span class="action">
-					// complete the game to continue
-				</span>
 				<span :class="{hide: isMobile}">
-					// you can also see it on my Github page
+					// find my profile on Github:
 				</span>
 				<span :class="{hide: !isMobile}">
 					// find my profile on Github:
@@ -46,7 +43,7 @@
 		</section>
 
 		<section data-aos="fade-up" class="game" v-if="!isMobile">
-			<SnakeGame />
+			<Terminal />
 		</section>
 
 	</main>
