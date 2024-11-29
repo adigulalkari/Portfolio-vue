@@ -28,7 +28,7 @@
                 "info": { 
                     "bio": {
                         "title": "bio",
-                        "description": "<br> About me <br> I’m Adi Gulalkari, a curious mind blending the art of data science with the magic of technology. By day, I craft AI solutions, decode patterns, and make sense of messy datasets. By night, I dabble in web development, dream up futuristic ideas, and sometimes conquer galaxies in my favorite games (virtually, of course).<br><br>When I’m not coding, you’ll find me experimenting in the kitchen, gazing at the stars (both literal and metaphoric), or losing myself in the intricate details of astrophysics. I believe in learning by doing, staying curious, and building solutions that are as elegant as they are impactful."
+                        "description": "About me:<br><br>I’m Adi Gulalkari, currently a student at IIT Madras and VIT Vellore, studying Data Science. I enjoy working in data science and other technology including Web Development and CyberSec.  My work revolves around developing AI-driven innovations, uncovering insights from complex datasets, and building robust frameworks for data analysis. "
                     },
                     "interests": {
                         "title": "interests",
